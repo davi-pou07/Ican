@@ -1,0 +1,54 @@
+<%- include('../../public/partials/header.ejs')%>
+
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Cadastro de Cliente</h2>
+                </div>
+                <div class="card-body">
+                    <form action="/admin/adicionar" method="POST" onsubmit="Validate(event,this)">
+                        <p>Nome:</p>
+                        <input class="form-control" type="text" placeholder="Insira nome do Usiario" name="nome">
+                        <p>E-mail</p>
+                        <input class="form-control" type="text" placeholder="Insira seu Email" name="email">
+                        <select name="nivel">
+                            <option value="1">1-A dafinir</option>
+                            <option value="2">2-A dafinir</option>
+                            <option value="3">3-A dafinir</option>
+                            <option value="4">4-A dafinir</option>
+                            <option value="5">5-A dafinir</option>
+                        </select>
+                        <p>Senha:</p>
+                        <input type="password" placeholder="Informe sua Senha" name="pass1" value="" id="x">
+                        <p>Confirma Senha</p>
+                        <input type="password" placeholder="Confirme sua Senha" name="pass2" value="" id="y">
+                        <button class="btn btn-success" >Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+
+        function Validate(event,form) {
+            event.preventDefault()
+            console.log(form)
+            var password = document.getElementById("x").value;
+    
+            var confirmPassword = document.getElementById("y").value;
+    
+            if (password != confirmPassword && password != undefined) {
+    
+                alert("Senhas não são iguais");
+    
+                return false;
+    
+            }
+            form.submit()
+            return true;
+    
+        }
+    
+    </script>
+    <%- include('../../public/partials/footer.ejs')%>
