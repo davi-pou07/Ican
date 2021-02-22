@@ -1,0 +1,317 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background:#f7f7f7;
+}
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+width:12px;
+height: 10px;
+}
+ 
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+background:#333;
+}
+ 
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+background: #ff8d00;
+}
+
+.gif-container {
+  background: url("../img/fundo2.gif") center;
+  background-size: cover;
+  height: 100%;
+}
+.icone {
+	color: orange;
+}
+.iconewhite{
+	color: white;
+}
+header{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	background: #041a2fe6;
+	color: white;
+
+}
+nav{
+	padding-top: fixed;
+	padding: 70px;
+	background: #041a2fe6;
+	color: white;
+}
+.ml-auto{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+/****formatação de texto****/
+h1{
+	color: white;
+	text-align: center;
+	margin: 5%;
+	border: 1px solid orange;
+	border-radius: 5px;
+	padding: 25px 5px;
+}
+.texto1{
+	color: orange;
+	text-align: center;
+	margin: -80px;
+	margin-left: 700px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 20px 5px;
+}
+/********/
+.secao{
+	color: #0b4379;
+	background: #f7f7f7;
+}
+.parte1{
+	padding-top: 80px;
+	padding-bottom: 40px;
+	color: #041a2fe6;
+}
+.secao1{
+	border-left: 1px solid orange;
+}
+
+/******seção 2******/
+
+.caixa{
+	color: white;
+	background: #0b4379;
+	border-top-left-radius: 250px;
+	margin-top: 0px;
+	padding: 80px;
+}
+
+/******botões******/
+.botao{
+	color: white;
+	background-image: linear-gradient(90deg,#f6670f 0,#f3ab32);
+}
+.caixa a:hover {
+	color: white;
+    background-image: linear-gradient(90deg,#f3ab32 0,#f6670f);
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+}
+ul .botao:hover{
+	color: white;
+    background-image: linear-gradient(90deg,#f3ab32 0,#f6670f);
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+}
+.corsolida{
+	background: #f7f7f7;
+}
+.corsolida2{
+	background: #0b4379;
+}
+.caixa2{
+	color: white;
+	background: #ff8d00;
+	border-top-right-radius: 250px;
+	margin-top: 0px;
+	padding: 80px;
+}
+
+/* secão videoo****/
+.secao{
+	color: #0b4379;
+	background: #f7f7f7;
+	padding-top: 30px;
+}
+.cardorange{
+	color: white;
+	 background: #ff8d00;
+}
+.cardazul{
+	color: white;
+	 background: #0b4379;
+}
+/****teste***/
+.flip-container {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flipper{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
+}
+.back{
+    transform: rotateY(180deg);
+}
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+    /* se quiser uma animação na vertical,
+    troque por rotateX(180deg)
+    */
+}
+.card2{
+	margin-top: 100px;
+}
+
+
+.texto2{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 35px;
+}
+.divisao{
+	padding: 10px;
+	margin-left: 37px;
+}
+.divisao:hover{
+	background: #86828261; 
+	border-radius: 5px;
+}
+.image{
+	align-content: center;
+	margin-left: 18px;
+}
+.numeracao{
+	color: #545871;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.motivo{
+	margin-top: 5px;
+	padding: 5px;
+	text-align: center;
+	font-size: 25px;
+}
+.motivo1{
+	text-align: center;
+	color: #545871;
+}
+#botao3{
+	text-align: center;
+}
+.botao4{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.botao4:hover{
+	color: white;
+    background-image: linear-gradient(90deg,#f3ab32 0,#f6670f);
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+}
+
+/*teste
+
+background-image: linear-gradient(0deg,#8a40de 0,#502186);*/
+
+.teste{
+	margin-top: 100px;
+	padding-bottom: 30px;
+	background-image: linear-gradient(0deg,#f59520 0,#de6f13);
+}
+.teste2{
+	margin-top: 120px;
+}
+.caixa3{
+	color: white;
+	background: #0b4379;
+	border-bottom-left-radius: 300px;
+	border-top-right-radius: 350px;
+	margin-top: 0px;
+	padding: 80px;
+	padding-bottom: 100px;
+}
+.botao5:hover{
+	color: white;
+    background-image: linear-gradient(90deg,#f3ab32 0,#f6670f);
+    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    overflow: hidden;
+}
+footer{
+	margin-top: 30px;
+	background-color: black;
+}
+.redes{
+	text-decoration: none;
+	list-style: none;
+}
+
+/*********footer********/
+
+
+.footer-wrap{
+	background: black;
+	border-top: 1px solid #c7bfce;
+	min-height: 300px;	
+	padding-bottom: 20px;
+}
+.footer-wrap .col-md-3{
+	text-align: center;
+}
+.footer-wrap .wrap-center{
+	display: inline-block;
+	text-align: left;
+}
+.footer-wrap ul{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.footer-wrap li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	color:#545871;
+	line-height: 19px;
+}
+.footer-title{
+	color: orange;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin: 35px 0 5px;
+	display: block;
+}
+.links-social{
+	text-align: center;
+	display: block;
+}
+.wrap-sociais{
+	margin-top: 15px;
+}
+.wrap-sociais img{
+	margin-right: 10px;
+}
+.wrap-sociais img:last-child{
+	margin-right: 0;
+}
+.formas-pagamento{
+	margin-bottom: 15px;
+}
+/*webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    color: #CA3338;
+    */
