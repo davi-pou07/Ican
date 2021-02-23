@@ -31,6 +31,6 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
-app.listen(process.env.PORT || 8080,()=>{
+app.listen(80,()=>{
     console.log("SERVIDOR OK")
 })
